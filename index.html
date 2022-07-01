@@ -7,7 +7,7 @@
    <!--- basic page needs
    ================================================== -->
    <meta charset="utf-8">
-	<title>Kards</title>
+	<title>Rebecca Peng</title>
 	<meta name="description" content="">  
 	<meta name="author" content="">
 
@@ -19,7 +19,9 @@
    ================================================== -->
    <link rel="stylesheet" href="css/base.css">  
    <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/vendor.css">     
+   <link rel="stylesheet" href="css/vendor.css"> 
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/blog.css">
 
    <!-- script
    ================================================== -->   
@@ -29,7 +31,7 @@
    <!-- favicons
 	================================================== -->
 	<link rel="icon" type="image/png" href="favicon.png">
-
+	<link href="css/blog.css" rel="stylesheet" type="text/css">
 </head>
 
 <body id="top">
@@ -37,29 +39,29 @@
 	<!-- header 
    ================================================== -->
    <header>   	
-   	<div class="row">
+	
+	   <header id="masthead" class="s-header">
 
-   		<div class="top-bar">
-   			<a class="menu-toggle" href="#"><span>Menu</span></a>
 
-	   		<div class="logo">
-		         <a href="index.html">KARDS</a>
-		      </div>		      
+            <div class="row s-header__nav-wrap">
+					<nav class="s-header__nav">
+						<ul>
+							<li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
+							<li><a href="#resume" class="smoothscroll">Resume</a></li>
+							<li><a href="#blog" class="smoothscroll">Blog</a></li>
+							<li><a href="#colophon" class="smoothscroll">Contact</a></li>
+						</ul>
+					</nav> <!-- end s-header__nav -->
+                
 
-		   	<nav id="main-nav-wrap">
-					<ul class="main-navigation">
-						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
-						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
-						<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
-						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
-						<li><a class="smoothscroll"  href="#services" title="">Services</a></li>					
-						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>	
-						<li><a href="styles.html" title="">Style Demo</a></li>				
-					</ul>
-				</nav>    		
-   		</div> <!-- /top-bar --> 
-   		
-   	</div> <!-- /row --> 		
+          
+
+            </div> <!-- end s-header__nav-wrap -->
+
+        </header> <!-- end s-header -->
+	
+	   
+	
    </header> <!-- /header -->
 
 	<!-- intro section
@@ -74,11 +76,17 @@
    			<div class="col-twelve">
 
 	   			<h5>Hello, World.</h5>
-	   			<h1>I'm Juan Dela Cruz.</h1>
+				<div class="name-row">
+					<img class="pfp" src="images/profile-pic.jpg" alt="Profile Picture">
+					<div class="name-head">
+						<h1 style="font-size: 60px">I'm Rebecca Peng.</h1>
+					</div>
+					
+				</div>
+	   			
 
 	   			<p class="intro-position">
-	   				<span>Front-end Developer</span>
-	   				<span>UI/UX Designer</span> 
+	   				<span>Computer Science Student @ Penn</span> 
 	   			</p>
 
 	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
@@ -88,12 +96,12 @@
    		</div>   		 		
    	</div> <!-- /intro-content --> 
 
-   	<ul class="intro-social">        
-         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-         <li><a href="#"><i class="fa fa-behance"></i></a></li>
-         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-         <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+   	<ul class="intro-social">
+		 <li><a href="mailto:rpeng@seas.upenn.edu" target="_blank"><i class="fa fa-envelope"></i></a></li>
+         <li><a href="https://www.linkedin.com/in/rebeccanpeng/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+         <li><a href="https://github.com/rebeccanpeng" target="_blank"><i class="fa fa-github"></i></a></li>
+         <li><a href="https://www.instagram.com/rebeccanpeng/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+         <li><a href="https://www.facebook.com/rebecca.peng.984" target="_blank"><i class="fa fa-facebook"></i></a></li>
       </ul> <!-- /intro-social -->      	
 
    </section> <!-- /intro -->
@@ -113,7 +121,7 @@
 
    				<img src="images/profile-pic.jpg" alt="Profile Picture">
 
-   				<p class="lead">Lorem ipsum Exercitation culpa qui dolor consequat exercitation fugiat laborum ex ea eiusmod ad do aliqua occaecat nisi ad irure sunt id pariatur Duis laboris amet exercitation veniam labore consectetur ea id quis eiusmod.</p>
+   				<p class="lead">Hi! I'm Rebecca, a second-year student at the University of Pennsylvania studying Computer Science. </p>
    			</div>   			
 
    		</div>   		
@@ -129,11 +137,11 @@
    			<ul class="info-list">
    				<li>
    					<strong>Fullname:</strong>
-   					<span>Juan Dela Cruz</span>
+   					<span>Rebecca Peng</span>
    				</li>
    				<li>
    					<strong>Birth Date:</strong>
-   					<span>September 28, 1987</span>
+   					<span>December 19, 2002</span>
    				</li>
    				<li>
    					<strong>Job:</strong>
@@ -145,7 +153,7 @@
    				</li>
    				<li>
    					<strong>Email:</strong>
-   					<span>me@kardswebsite.com</span>
+   					<span>rpeng@seas.upenn.edu</span>
    				</li>
 
    			</ul> <!-- /info-list -->
@@ -230,12 +238,14 @@
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>UI Designer</h3>
-	   					<p>July 2015 - Present</p>
+	   					<h3>AI Intern</h3>
+	   					<p>June 2022 - Present</p>
 	   				</div>
 
 	   				<div class="timeline-content">
-	   					<h4>Awesome Studio</h4>
+						<h3>Phenikaa MaaS</h3>
+	   					<h4>Ho Chi Minh City, Vietnam</h4>
+						
 	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
 	   				</div>
 
@@ -248,12 +258,12 @@
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>Front-end Developer</h3>
+	   					<h3>Instructor Assistant</h3>
 	   					<p>July 2014 - June 2015</p>
 	   				</div>
 
 	   				<div class="timeline-content">
-	   					<h4>Super Cool Agency</h4>
+	   					<h4>Kode with Klossy</h4>
 	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
 	   				</div>
 
@@ -358,8 +368,138 @@
 	</section> <!-- /features -->
 
 
-	<!-- Portfolio Section
+	<!-- Blog Section
    ================================================== -->
+	<section id="blog">
+	
+		
+		<!--  masonry -->
+            <div id="bricks" class="bricks">
+
+                <div class="masonry">
+
+                    <div class="bricks-wrapper" data-animate-block>
+
+                        <div class="grid-sizer"></div>
+
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="styles.html" class="thumb-link">
+                                    <img src="blogs/blogImgs/foosball1.JPG" 
+                                        srcset="images/thumbs/masonry/statue-600.jpg 1x, images/thumbs/masonry/statue-1200.jpg 2x" alt="">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Vietnam</a>
+                                        </span>
+                                       
+                                    </div>
+                                    <h1 class="entry__title"><a href="single-standard.html">The Power of Foosball</a></h1>
+                                 </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                    Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla 
+                                    sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in.
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article -->
+
+                   
+
+                        <article class="brick entry" data-animate-el>
+            
+                            <div class="entry__thumb">
+                                <a href="single-standard.html" class="thumb-link">
+                                    <img src="images/thumbs/masonry/woodcraft-600.jpg" 
+                                        srcset="images/thumbs/masonry/woodcraft-600.jpg 1x, images/thumbs/masonry/woodcraft-1200.jpg 2x" alt="">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+            
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Lifestyle</a>
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Shikamaru Nara</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title"><a href="single-standard.html">What Minimalism Really Looks Like.</a></h1>
+                                 </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                    Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo 
+                                    est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat.
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+            
+                        </article> <!-- end entry -->
+        
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="single-standard.html" class="thumb-link">
+                                    <img src="images/thumbs/masonry/tulips-600.jpg" 
+                                        srcset="images/thumbs/masonry/tulips-600.jpg 1x, images/thumbs/masonry/tulips-1200.jpg 2x" alt="">
+                                </a>
+                            </div>  <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Health</a>
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Kakashi Hatake</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title"><a href="single-standard.html">10 Interesting Facts About Caffeine.</a></h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                    Consequatur amet voluptatem aliquid fuga. Consequatur tempora eos earum deleniti repellendus ducimus. Qui ipsum voluptas 
+                                    sed et ad dignissimos explicabo maxime dolor. Rerum quia et. Suscipit similique et. Atque tenetur provident. Excepturi 
+                                    autem unde.
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article -->
+
+                        
+
+                        
+        
+
+                        
+
+             
+
+                    
+
+                    </div> <!-- end bricks-wrapper -->
+					<div class="row button-section">
+						<a href="" title="See More" class="button stroke smoothscroll">See More</a>
+					</div>
+                </div> <!-- end masonry-->
+	
+	
+	</section>
 	<section id="portfolio">
 
 		<div class="row section-intro">
@@ -414,7 +554,7 @@
 
 	            <div class="bgrid folio-item">
 	               <div class="item-wrap">
-	               	<img src="images/portfolio/clouds.jpg"alt="Clouds">
+	               	<img src="images/portfolio/clouds.jpg" alt="Clouds">
 	                  <a href="#modal-03" class="overlay">             		                  
 	                     <div class="folio-item-table">
 	                     	<div class="folio-item-cell">

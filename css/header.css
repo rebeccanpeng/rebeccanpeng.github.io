@@ -1,0 +1,502 @@
+/* CSS Document */
+/* ------------------------------------------------------------------- 
+ * ## fonts 
+ * ------------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap");
+
+:root {
+    --font-1    : "Inter", sans-serif;
+    --font-2    : "Castoro", serif;
+
+    /* monospace
+    */
+    --font-mono : Consolas, "Andale Mono", Courier, "Courier New", monospace;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## colors
+ * ------------------------------------------------------------------- */
+:root {
+
+    /* color-1(#5F9295)
+     * color-2(#2D2327)
+     */
+    --color-1                      : hsla(183, 22%, 48%, 1);
+    --color-2                      : hsla(336, 13%, 16%, 1);
+
+    /* theme color variations
+     */
+    --color-1-lighter              : hsla(183, 22%, 68%, 1);
+    --color-1-light                : hsla(183, 22%, 58%, 1);
+    --color-1-dark                 : hsla(183, 22%, 38%, 1);
+    --color-1-darker               : hsla(183, 22%, 28%, 1);
+
+    --color-2-lighter              : hsla(336, 13%, 36%, 1);
+    --color-2-light                : hsla(336, 13%, 26%, 1);
+    --color-2-dark                 : hsla(336, 13%, 10%, 1);
+    --color-2-darker               : hsla(336, 13%, 5%, 1);
+
+    /* feedback colors
+     * color-error(#ffd1d2), color-success(#c8e675), 
+     * color-info(#d7ecfb), color-notice(#fff099)
+     */
+    --color-error                  : hsla(359, 100%, 91%, 1);
+    --color-success                : hsla(76, 69%, 68%, 1);
+    --color-info                   : hsla(205, 82%, 91%, 1);
+    --color-notice                 : hsla(51, 100%, 80%, 1);
+    --color-error-content          : hsla(359, 50%, 50%, 1);
+    --color-success-content        : hsla(76, 29%, 28%, 1);
+    --color-info-content           : hsla(205, 32%, 31%, 1);
+    --color-notice-content         : hsla(51, 30%, 30%, 1);
+
+    /* shades 
+     * generated using 
+     * Tint & Shade Generator 
+     * (https://maketintsandshades.com/)
+     */
+    --color-black                  : #000000;
+    --color-gray-19                : #0d0f0f;
+    --color-gray-18                : #1b1e1e;
+    --color-gray-17                : #282d2e;
+    --color-gray-16                : #363c3d;
+    --color-gray-15                : #444b4c;
+    --color-gray-14                : #515a5b;
+    --color-gray-13                : #5f696a;
+    --color-gray-12                : #6c787a;
+    --color-gray-11                : #7a8789;
+    --color-gray-10                : #879698;
+    --color-gray-9                 : #93a1a2;
+    --color-gray-8                 : #9fabad;
+    --color-gray-7                 : #abb6b7;
+    --color-gray-6                 : #b7c0c1;
+    --color-gray-5                 : #c3cbcc;
+    --color-gray-4                 : #cfd5d6;
+    --color-gray-3                 : #dbe0e0;
+    --color-gray-2                 : #e7eaea;
+    --color-gray-1                 : #f3f5f5;
+    --color-white                  : #ffffff;
+
+    /* text
+     */
+    --color-text                   : var(--color-gray-17);
+    --color-text-dark              : var(--color-gray-19);
+    --color-text-light             : var(--color-gray-12);
+    --color-placeholder            : var(--color-gray-12);
+
+    /* buttons
+     */
+    --color-btn                    : var(--color-gray-4);
+    --color-btn-text               : var(--color-text);
+    --color-btn-hover              : var(--color-gray-5);
+    --color-btn-hover-text         : var(--color-text);
+    --color-btn-primary            : var(--color-1-dark);
+    --color-btn-primary-text       : var(--color-white);
+    --color-btn-primary-hover      : var(--color-text-dark);
+    --color-btn-primary-hover-text : var(--color-white);
+    --color-btn-stroke             : var(--color-1-dark);
+    --color-btn-stroke-text        : var(--color-1-darker);
+    --color-btn-stroke-hover       : var(--color-text-dark);
+    --color-btn-stroke-hover-text  : var(--color-white);
+
+    /* preloader
+     */
+    --color-preloader-bg           : #CFE6E8;
+    --color-loader                 : var(--color-text-dark);
+    --color-loader-light           : var(--color-1-lighter);
+
+    /* others
+     */
+    --color-body                   : #CFE6E8;
+    --color-border                 : rgba(0, 0, 0, .08);
+    --border-radius                : 3px;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## spacing and typescale
+ * ------------------------------------------------------------------- */
+:root {
+
+    /* spacing
+     * base font size: 19px 
+     * vertical space unit : 32px
+     */
+    --base-size        : 62.5%;
+    --multiplier       : 1;
+    --base-font-size   : calc(1.9rem * var(--multiplier));
+    --space            : calc(3.2rem * var(--multiplier));
+
+    /* vertical spacing 
+     */
+    --vspace-0_125     : calc(0.125 * var(--space));
+    --vspace-0_25      : calc(0.25 * var(--space));
+    --vspace-0_375     : calc(0.375 * var(--space));
+    --vspace-0_5       : calc(0.5 * var(--space));
+    --vspace-0_625     : calc(0.625 * var(--space));
+    --vspace-0_75      : calc(0.75 * var(--space));
+    --vspace-0_875     : calc(0.875 * var(--space));
+    --vspace-1         : calc(var(--space));
+    --vspace-1_25      : calc(1.25 * var(--space));
+    --vspace-1_5       : calc(1.5 * var(--space));
+    --vspace-1_75      : calc(1.75 * var(--space));
+    --vspace-2         : calc(2 * var(--space));
+    --vspace-2_5       : calc(2.5 * var(--space));
+    --vspace-3         : calc(3 * var(--space));
+    --vspace-3_5       : calc(3.5 * var(--space));
+    --vspace-4         : calc(4 * var(--space));
+    --vspace-4_5       : calc(4.5 * var(--space));
+    --vspace-5         : calc(5 * var(--space));
+
+    /* type scale
+     * ratio 1:2 | base: 19px
+     * -------------------------------------------------------
+     *
+     * --text-display-3 = (81.70px)
+     * --text-display-2 = (68.08px)
+     * --text-display-1 = (56.73px)
+     * --text-xxxl      = (47.28px)
+     * --text-xxl       = (39.40px)
+     * --text-xl        = (32.83px)
+     * --text-lg        = (27.36px)
+     * --text-md        = (22.80px)
+     * --text-size      = (19.00px) BASE
+     * --text-sm        = (15.83px)
+     * --text-xs        = (13.19px)
+     *
+     * ---------------------------------------------------------
+     */
+    --text-scale-ratio : 1.2;
+    --text-size        : var(--base-font-size);
+    --text-xs          : calc((var(--text-size) / var(--text-scale-ratio)) / var(--text-scale-ratio));
+    --text-sm          : calc(var(--text-xs) * var(--text-scale-ratio));
+    --text-md          : calc(var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-lg          : calc(var(--text-md) * var(--text-scale-ratio));
+    --text-xl          : calc(var(--text-lg) * var(--text-scale-ratio));
+    --text-xxl         : calc(var(--text-xl) * var(--text-scale-ratio));
+    --text-xxxl        : calc(var(--text-xxl) * var(--text-scale-ratio));
+    --text-display-1   : calc(var(--text-xxxl) * var(--text-scale-ratio));
+    --text-display-2   : calc(var(--text-display-1) * var(--text-scale-ratio));
+    --text-display-3   : calc(var(--text-display-2) * var(--text-scale-ratio));
+
+    /* default button height
+     */
+    --vspace-btn       : var(--vspace-2);
+}
+/* ===================================================================
+ * # SITE HEADER
+ *
+ *
+ * ------------------------------------------------------------------- */
+.s-header {
+    --box-shadow: 0 1px 1px rgba(0, 0, 0, 0.01),
+                  0 2px 2px rgba(0, 0, 0, 0.01),
+                  0 6px 6px rgba(0, 0, 0, 0.01);
+
+    z-index          : 100;
+    display          : flex;
+    height           : var(--header-height);
+    background-color : black;
+    width            : 100%;
+    transition       : height 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+    position         : absolute;
+    top              : 0;
+    left             : 0;
+}
+
+.s-header.sticky {
+    --header-height : 8rem;
+    border-bottom   : 1px solid var(--color-border);
+    box-shadow      : var(--box-shadow);
+    position        : fixed;
+}
+
+.s-header__block {
+    z-index : 101;
+}
+
+/* --------------------------------------------------------------------
+ * ## branding
+ * -------------------------------------------------------------------- */
+.s-header__branding {
+    z-index        : 2;
+    font-family    : var(--font-2);
+    font-size      : 3rem;
+    line-height    : 1;
+    letter-spacing : -0.03em;
+    transform      : translateY(-50%);
+    position       : absolute;
+    top            : 50%;
+    left           : 3.6rem;
+}
+
+.s-header__branding .site-title {
+    margin  : 0;
+    padding : 0;
+}
+
+.s-header__branding a {
+    margin  : 0;
+    padding : 0;
+    outline : 0;
+    border  : none;
+    color   : white;
+}
+
+/* --------------------------------------------------------------------
+ * ## main navigation
+ * -------------------------------------------------------------------- */
+.s-header__nav-wrap {
+	display: flex;
+    justify-content : center;
+    align-items     : center;
+}
+
+.s-header__nav a {
+    display             : block;
+    font-size           : 2rem;
+    font-weight         : 400;
+    line-height         : var(--vspace-1);
+    color               : white;
+    padding             : 0 1.8rem;
+    transition-property : color, background-color;
+	font-family: "poppins-semibold", serif;
+}
+
+.s-header__nav a:focus,
+.s-header__nav a:hover {
+    color : #FF0077;
+}
+
+.s-header__nav ul {
+    list-style : none;
+    display    : flex;
+    flex-flow  : row nowrap;
+	align-items: center;
+	justify-content: center;
+    margin     : 0;
+    padding    : 0;
+}
+
+.s-header__nav li {
+    padding-left : 0;
+}
+
+/* --------------------------------------------------------------------
+ * ## header social
+ * -------------------------------------------------------------------- */
+.s-header__social {
+    list-style : none;
+    display    : flex;
+    margin     : 0;
+    transform  : translateY(-50%);
+    position   : absolute;
+    top        : calc(50% - .2rem);
+    right      : 3.6rem;
+}
+
+.s-header__social li {
+    padding-left : 0;
+    margin-right : 1rem;
+    line-height  : 1;
+}
+
+.s-header__social li:last-child {
+    margin-right : 0;
+}
+
+.s-header__social svg {
+    height : 2.8rem;
+    width  : 2.8rem;
+}
+
+.s-header__social svg path {
+    fill : var(--color-text-dark);
+}
+
+/* --------------------------------------------------------------------
+ * ## mobile menu toggle
+ * -------------------------------------------------------------------- */
+.s-header__menu-toggle {
+    display  : none;
+    width    : 6.8rem;
+    height   : var(--header-height);
+    position : absolute;
+    top      : 0;
+    right    : 1.6rem;
+}
+
+.s-header__menu-toggle span {
+    display          : block;
+    background-color : var(--color-text-dark);
+    width            : 28px;
+    height           : 2px;
+    margin-top       : -1px;
+    font             : 0/0 a;
+    text-shadow      : none;
+    color            : transparent;
+    transition       : background-color 0.2s ease-in-out;
+    position         : absolute;
+    right            : 20px;
+    top              : 50%;
+    bottom           : auto;
+    left             : auto;
+}
+
+.s-header__menu-toggle span::before,
+.s-header__menu-toggle span::after {
+    content             : "";
+    width               : 100%;
+    height              : 100%;
+    background-color    : inherit;
+    transition-duration : 0.2s, 0.2s;
+    transition-delay    : 0.2s, 0s;
+    position            : absolute;
+    left                : 0;
+}
+
+.s-header__menu-toggle span::before {
+    top                 : -8px;
+    transition-property : top, transform;
+}
+
+.s-header__menu-toggle span::after {
+    bottom              : -8px;
+    transition-property : bottom, transform;
+}
+
+/* is clicked 
+ */
+.s-header__menu-toggle.is-clicked span {
+    background-color : rgba(255, 255, 255, 0);
+}
+
+.s-header__menu-toggle.is-clicked span::before,
+.s-header__menu-toggle.is-clicked span::after {
+    background-color : var(--color-text-dark);
+    transition-delay : 0s, 0.2s;
+}
+
+.s-header__menu-toggle.is-clicked span::before {
+    top       : 0;
+    transform : rotate(45deg);
+}
+
+.s-header__menu-toggle.is-clicked span::after {
+    bottom    : 0;
+    transform : rotate(-45deg);
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * site-header
+ * ------------------------------------------------------------------- */
+@media screen and (max-width: 1200px) {
+    .s-header__nav a {
+        font-size : 1.9rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .s-header__nav a {
+        font-size : 1.8rem;
+        padding   : 0 1.4rem;
+    }
+
+    .s-header__social svg {
+        height : 2.6rem;
+        width  : 2.6rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .s-header {
+        --header-height  : 8rem;
+        display          : block;
+        background-color : transparent;
+    }
+
+    .s-header__block {
+        width            : 100%;
+        height           : var(--header-height);
+        background-color : var(--color-body);
+        border-bottom    : 1px solid var(--color-border);
+        box-shadow       : var(--box-shadow);
+    }
+
+    .s-header__branding {
+        top : calc(var(--header-height) / 2);
+    }
+
+    .s-header__nav-wrap {
+        display          : block;
+        width            : 100%;
+        max-width        : none;
+        transform        : scaleY(0);
+        transform-origin : center top;
+        padding          : var(--vspace-2) 3.6rem var(--vspace-2);
+        background-color : var(--color-body);
+        border-bottom    : 1px solid var(--color-border);
+        box-shadow       : var(--box-shadow);
+    }
+
+    .s-header__nav,
+    .s-header__social {
+        transform  : translateY(-2rem);
+        opacity    : 0;
+        visibility : hidden;
+    }
+
+    .s-header__nav {
+        padding : 0 0 var(--vspace-1_25);
+    }
+
+    .s-header__nav a {
+        font-family : var(--font-1);
+        font-size   : var(--text-lg);
+        font-weight : 400;
+        line-height : var(--vspace-1);
+        padding     : var(--vspace-0_375) 0;
+    }
+
+    .s-header__nav ul {
+        display          : block;
+        background-color : transparent;
+        text-align       : left;
+        margin           : 0;
+        border           : none;
+    }
+
+    .s-header__nav ul li {
+        display : block;
+    }
+
+    .s-header__social {
+        position : static;
+    }
+
+    .s-header__menu-toggle {
+        display : block;
+    }
+
+    .menu-is-open .s-header {
+        height : auto;
+    }
+
+    .menu-is-open .s-header__block {
+        box-shadow : none;
+    }
+
+    .menu-is-open .s-header__nav-wrap {
+        transform        : scaleY(1);
+        transition       : transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition-delay : 0s;
+    }
+
+    .menu-is-open .s-header__nav,
+    .menu-is-open .s-header__social {
+        transform        : translateY(0);
+        opacity          : 1;
+        visibility       : visible;
+        transition       : all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition-delay : .4s;
+    }
+}

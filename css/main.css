@@ -1094,7 +1094,7 @@ header .row {
 	min-height: 66px;
 }
 header .top-bar {
-	display: block;
+	display: flex;
 	background: #000000;
 	min-width: 220px;
 	min-height: 66px;
@@ -1123,10 +1123,34 @@ header .logo a {
 	background-size: 92px 15px;
 }
 
+.pfp{
+	height: 20%;
+	width: 20%;
+	border-radius: 50%;
+	margin: 2% 5% 2% 0;
+	float: left;
+}
+
+
+.name-row{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
 /**
  * menu toggle - (_layout.css)
  * ------------------------------------------------------------------- 
  */
+
+.menu-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
 .menu-toggle {
 	float: left;
 	width: 40px;
@@ -1510,6 +1534,7 @@ header .logo a {
 	margin: .9rem 0 0 0;
 	float: left;
 }
+
 .intro-info .lead {
 	text-align: left;
 	padding-left: 13rem;
