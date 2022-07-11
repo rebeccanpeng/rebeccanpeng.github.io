@@ -15,8 +15,10 @@
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="../css/blogVendor.css">
-    <link rel="stylesheet" href="../css/blogStyle.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/blogPage.css">
+
+
 
     <!-- favicons
     ================================================== -->
@@ -46,80 +48,33 @@
     <div id="page" class="s-pagewrap">
 
 
-        <!-- # site header 
-        ================================================== -->
-        <header id="masthead" class="s-header">
+       	<!-- header 
+   ================================================== -->
+   <header>   	
+	
+	   <header id="masthead" class="s-header">
 
-            <div class="s-header__branding">
-                <p class="site-title">
-                    <a href="index.html" rel="home">Spurgeon.</a>
-                </p>
-            </div>
 
-            <div class="row s-header__navigation">
+            <div class="row s-header__nav-wrap">
+					<nav class="s-header__nav">
+						<ul>
+							<li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
+							<li><a href="#resume" class="smoothscroll">Resume</a></li>
+							<li><a href="#blog" class="smoothscroll">Blog</a></li>
+							<li><a href="#colophon" class="smoothscroll">Contact</a></li>
+						</ul>
+					</nav> <!-- end s-header__nav -->
+                
 
-                <nav class="s-header__nav-wrap">
-    
-                    <h3 class="s-header__nav-heading">Navigate to</h3>
-    
-                    <ul class="s-header__nav">
-                        <li><a href="index.html" title="">Home</a></li>
-                        <li class="has-children">
-                            <a href="#0" title="" class="">Categories</a>
-                            <ul class="sub-menu">
-                                <li><a href="category.html">Design</a></li>
-                                <li><a href="category.html">Lifestyle</a></li>
-                                <li><a href="category.html">Inspiration</a></li>
-                                <li><a href="category.html">Work</a></li>
-                                <li><a href="category.html">Health</a></li>
-                                <li><a href="category.html">Photography</a></li>
-                            </ul>
-                        </li>
-                        <li class="current-menu-item has-children">
-                            <a href="#0" title="" class="">Blog</a>
-                            <ul class="sub-menu">
-                                <li><a href="single-standard.html">Standard Post</a></li>
-                                <li><a href="single-video.html">Video Post</a></li>
-                                <li><a href="single-audio.html">Audio Post</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="styles.html" title="">Styles</a></li>
-                        <li><a href="about.html" title="">About</a></li>
-                        <li><a href="contact.html" title="">Contact</a></li>
-                    </ul> <!-- end s-header__nav -->
+          
 
-                </nav> <!-- end s-header__nav-wrap -->
-    
-            </div> <!-- end s-header__navigation -->
-
-            <div class="s-header__search">
-
-                <div class="s-header__search-inner">
-                    <div class="row">
-    
-                        <form role="search" method="get" class="s-header__search-form" action="#">
-                            <label>
-                                <span class="u-screen-reader-text">Search for:</span>
-                                <input type="search" class="s-header__search-field" placeholder="Search for..." value="" name="s" title="Search for:" autocomplete="off">
-                            </label>
-                            <input type="submit" class="s-header__search-submit" value="Search"> 
-                        </form>
-    
-                        <a href="#0" title="Close Search" class="s-header__search-close">Close</a>
-    
-                    </div> <!-- end row -->
-                </div> <!-- s-header__search-inner -->
-    
-            </div> <!-- end s-header__search -->
-
-            <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
-            <a class="s-header__search-trigger" href="#">
-                <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.25 19.25L15.5 15.5M4.75 11C4.75 7.54822 7.54822 4.75 11 4.75C14.4518 4.75 17.25 7.54822 17.25 11C17.25 14.4518 14.4518 17.25 11 17.25C7.54822 17.25 4.75 14.4518 4.75 11Z"></path>
-                </svg>
-            </a>
+            </div> <!-- end s-header__nav-wrap -->
 
         </header> <!-- end s-header -->
+	
+	   
+	
+   </header> <!-- /header -->
 
 
         <!-- # site-content
@@ -134,23 +89,16 @@
                             <header class="entry__header">
     
                                 <h1 class="entry__title">
-                                    Understanding and Using Negative Space.
+                                    The Power of Foosball.
                                 </h1>
 
                                 <div class="entry__meta">
-                                    <div class="entry__meta-author">
-                                        <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                            <circle cx="12" cy="8" r="3.25" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle>
-                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.8475 19.25H17.1525C18.2944 19.25 19.174 18.2681 18.6408 17.2584C17.8563 15.7731 16.068 14 12 14C7.93201 14 6.14367 15.7731 5.35924 17.2584C4.82597 18.2681 5.70558 19.25 6.8475 19.25Z"></path>
-                                        </svg>
-                                        <a href="#">Naruto Uzumaki</a> 
-                                    </div>
                                     <div class="entry__meta-date">
                                         <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
                                             <circle cx="12" cy="12" r="7.25" stroke="currentColor" stroke-width="1.5"></circle>
                                             <path stroke="currentColor" stroke-width="1.5" d="M12 8V12L14 14"></path>
                                         </svg>
-                                        August 15, 2021 
+                                        June 10, 2022
                                     </div>
                                     <div class="entry__meta-cat">
                                         <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -159,8 +107,7 @@
                                         </svg>
                                           
                                         <span class="cat-links">
-                                            <a href="#0">Inspiration</a>
-                                            <a href="#0">Design</a>
+                                            <a href="#0">Vietnam</a>
                                         </span>
                                     </div>
                                 </div>
@@ -168,131 +115,61 @@
 
                             <div class="entry__media">
                                 <figure class="featured-image">
-                                    <img src="images/thumbs/single/standard-1200.jpg" 
-                                      srcset="images/thumbs/single/standard-2400.jpg 2400w, 
-                                              images/thumbs/single/standard-1200.jpg 1200w, 
-                                              images/thumbs/single/standard-600.jpg 600w" sizes="(max-width: 2400px) 100vw, 2400px" alt="">
+                                    <img src="blogImgs/foosball1.JPG" alt="">
                                 </figure>
                             </div>
 
                             <div class="content-primary">
 
                                 <div class="entry__content">
-                                    <p class="lead">
-                                    Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat nostrud cupidatat dolor 
-                                    sunt sint sit nisi est eu exercitation incididunt adipisicing veniam velit id fugiat 
-                                    enim mollit amet anim veniam dolor dolor irure velit commodo cillum sit nulla ullamco 
-                                    magna amet magna cupidatat qui labore cillum cillum cupidatat fugiat nostrud. </p> 
+                                 
 
                                     <p class="drop-cap">
-                                    Eligendi quam at quis. Sit vel neque quam consequuntur expedita quisquam. Incidunt quae 
-                                    qui error. Rerum non facere mollitia ut magnam laboriosam. Quisquam neque quia ex eligendi 
-                                    repellat illum quibusdam aut. Architecto quam consequuntur totam ratione reprehenderit est 
-                                    praesentium impedit maiores incididunt adipisicing veniam velit .
+                                        Ever since the beginning of our time at Phenikaa MaaS, it's been easy to see how close the team is, 
+                                        which has taught me that I think I really like the startup culture. It was also easy to tell that 
+                                        most of the employees were genuinely excited for us to be there. As the week went on, more and more 
+                                        people would try to talk to us, and if they couldn't speak English, they'd ask others to translate even 
+                                        the simple questions like “do you like the food you're trying?” We've gotten treated to so many meals and 
+                                        snacks, and I've been able to have conversations with so many people who want to hang out with us even 
+                                        on the weekends just because they were afraid we'd be bored. 
                                     </p>
             
                                     <p>
-                                    Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat nostrud cupidatat dolor 
-                                    sunt sint sit nisi est eu exercitation incididunt adipisicing veniam velit id fugiat 
-                                    enim mollit amet anim veniam dolor dolor irure velit commodo cillum sit nulla ullamco 
-                                    magna amet magna cupidatat qui labore cillum sit in tempor veniam consequat non laborum 
-                                    adipisicing aliqua ea nisi sint ut quis proident ullamco ut dolore culpa occaecat ut 
-                                    laboris in sit minim cupidatat ut dolor voluptate enim veniam consequat occaecat fugiat 
-                                    in adipisicing in amet Ut nulla nisi non ut enim aliqua laborum mollit quis nostrud sed sed.
+                                        Though food is a close second for ways to bond, foosball has somehow become the single most important activity 
+                                        in bringing me closer to my coworkers. In the company's break room, there is a foosball table that is a 
+                                        prime source of entertainment every time we're on break. This is about twice a day— once after people are done 
+                                        eating at lunchtime and another time in the afternoon when we have a snack/break time. At first, I would just stand 
+                                        to the side and watch the games. These people were insanely good at foosball, a game that I didn't really think 
+                                        had that much skill involved. My perception of foosball mostly is the view an 8 year old would have— maybe 
+                                        spin the players around as quickly as possible and hope luck is on your side as the ball shoots across the table. 
+                                        However, I was quickly shown otherwise. The employees were passing the ball to themselves and skillfully 
+                                        maneuvering the ball, all while shooting the ball so fast that I was in disbelief over how strong their wrists must be. 
                                     </p>
-                
+<!--                 
                                     <figure class="alignwide">
                                         <img src="images/sample-1200.jpg" 
                                           srcset="images/sample-2400.jpg 2400w, 
                                                   images/sample-1200.jpg 1200w, 
                                                   images/sample-600.jpg 600w" sizes="(max-width: 2400px) 100vw, 2400px" alt="">
-                                    </figure>
+                                    </figure> -->
             
                                     <p>
-                                    Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat nostrud cupidatat dolor 
-                                    sunt sint sit nisi est eu exercitation incididunt adipisicing veniam velit id fugiat 
-                                    enim mollit amet anim veniam dolor dolor irure velit commodo cillum sit nulla ullamco 
-                                    magna amet magna cupidatat qui labore cillum sit in tempor veniam consequat non laborum 
-                                    adipisicing aliqua ea nisi sint ut quis proident ullamco ut dolore culpa occaecat ut 
-                                    laboris in sit minim cupidatat ut dolor voluptate enim veniam consequat occaecat fugiat 
-                                    in adipisicing in amet Ut nulla nisi non ut enim aliqua laborum mollit quis nostrud sed sed.
+                                        Eventually, I was encouraged to join in on the game with one of my coworkers. I somehow was 
+                                        decent at it (honestly all by luck), and that began a trend of me joining in on the rotation of games 
+                                        every time we had a break. During these games, I would often be playing with someone i didn't really 
+                                        know as my partner, just trying my best to not shoot the ball into my own goal while my partner carried us. 
+                                        Most of the time, I couldn't understand what was being said around me. I could tell they were all playfully 
+                                        trash talking each other, and it was a joyous time for everyone. Laughter is universal after all, and 
+                                        this time was always filled with so much laughing from all around that I learned to really enjoy playing. I 
+                                        learned the Vietnamese word for “shoot the ball!” amongst all the playful noise that surrounded the foosball 
+                                        table every time, and I even slowly picked up on more foosball strategy. Most importantly, my relationships 
+                                        with the ~foosball regulars grew. Conversations were started as we stood around the table waiting for our turn, 
+                                        and a camaraderie formed as I played more games. I never thought foosball would be my way of getting closer with 
+                                        people, let alone in a foreign country at work, but I'm so glad that I got over my pointless fear of not 
+                                        being good enough at the game and just trusted the kindness of my coworkers in being so welcoming. 
                                     </p>
             
-                                    <h2>Large Heading</h2>
-            
-                                    <p>
-                                    Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta 
-                                    nobis est eligendi optio cumque nihil impedit quo minus <a href="http://#">omnis voluptas assumenda est</a> 
-                                    id quod maxime placeat facere possimus, omnis dolor repellendus. Temporibus autem quibusdam et 
-                                    aut officiis debitis aut rerum necessitatibus saepe eveniet ut et.</p>
-            
-                                    <blockquote>
-                                        <p>
-                                        For God so loved the world, that he gave his only Son, that whoever believes in 
-                                        him should not perish but have eternal life. For God did not send his Son into 
-                                        the world to condemn the world, but in order that the world might be 
-                                        saved through him.
-                                        </p>
-                                        <cite>John 3:16-17 ESV</cite>
-                                    </blockquote>
-            
-                                    <p>
-                                    Odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti dolores 
-                                    et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa. 
-                                    Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit 
-                                    libero, a pharetra augue laboris in sit minim cupidatat ut dolor voluptate enim veniam consequat 
-                                    occaecat fugiat in adipisicing in amet Ut nulla nisi non ut enim aliqua laborum mollit quis nostrud sed sed..</p>
-            
-                                    <h3>Smaller Heading</h3>
-            
-                                    <p>
-                                    Quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est 
-                                    eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas 
-                                    assumenda est, omnis dolor repellendus.
-                                    </p>
-            
-                                    <p>
-                                    Quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est 
-                                    eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas 
-                                    assumenda est, omnis dolor repellendus.
-                                    </p>
-                                        
-<pre><code class="language-css">
-    code {
-        font-size: 1.4rem;
-        margin: 0 .2rem;
-        padding: .2rem .6rem;
-        white-space: nowrap;
-        background: #F1F1F1;
-        border: 1px solid #E1E1E1;	
-        border-radius: 3px;
-    }
-</code></pre>
-                                            
-                                    <p>
-                                    Odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti dolores et 
-                                    quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa.</p>
-            
-                                    <ul>
-                                        <li>Donec nulla non metus auctor fringilla.
-                                            <ul>
-                                                <li>Lorem ipsum dolor sit amet.</li>
-                                                <li>Lorem ipsum dolor sit amet.</li>
-                                                <li>Lorem ipsum dolor sit amet.</li>
-                                            </ul>
-                                        </li>
-                                        <li>Donec nulla non metus auctor fringilla.</li>
-                                        <li>Donec nulla non metus auctor fringilla.</li>
-                                    </ul>
-            
-                                    <p>
-                                    Odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti dolores et quas 
-                                    molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa. Aenean eu leo quam. 
-                                    Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue 
-                                    laboris in sit minim cupidatat ut dolor voluptate enim veniam consequat occaecat fugiat in adipisicing 
-                                    in amet Ut nulla nisi non ut enim aliqua laborum mollit quis nostrud sed sed.
-                                    </p>
-
+                                    
                                     <p class="entry__tags">
                                         <strong>Tags:</strong>
                     
@@ -305,23 +182,7 @@
                         
                                     </p>
     
-                                    <div class="entry__author-box">
-                                        <figure class="entry__author-avatar">
-                                            <img alt="" src="images/avatars/user-06.jpg" class="avatar">
-                                        </figure>
-                                        <div class="entry__author-info">
-                                            <h5 class="entry__author-name">
-                                                <a href="#0">
-                                                    Naruto Uzumaki
-                                                </a>
-                                            </h5>
-                                            <p>
-                                            Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, 
-                                            a pharetra augue laboris in sit minim cupidatat ut dolor voluptate enim veniam 
-                                            consequat occaecat.
-                                            </p>
-                                        </div>
-                                    </div>
+                        
 
                                 </div> <!-- end entry-content -->
 
@@ -344,215 +205,7 @@
 
                         </article> <!-- end entry -->
 
-                        <!-- comments -->
-                        <div class="comments-wrap">
-
-                            <div id="comments">
-                                <div class="large-12">
-
-                                    <h3>5 Comments</h3>
-
-                                    <!-- START commentlist -->
-                                    <ol class="commentlist">
-
-                                        <li class="depth-1 comment">
-
-                                            <div class="comment__avatar">
-                                                <img class="avatar" src="images/avatars/user-01.jpg" alt="" width="50" height="50">
-                                            </div>
-
-                                            <div class="comment__content">
-
-                                                <div class="comment__info">
-                                                    <div class="comment__author">Itachi Uchiha</div>
-
-                                                    <div class="comment__meta">
-                                                        <div class="comment__time">Aug 15, 2021</div>
-                                                        <div class="comment__reply">
-                                                            <a class="comment-reply-link" href="#0">Reply</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="comment__text">
-                                                <p>Adhuc quaerendum est ne, vis ut harum tantas noluisse, id suas iisque mei. Nec te inani ponderum vulputate,
-                                                facilisi expetenda has et. Iudico dictas scriptorem an vim, ei alia mentitum est, ne has voluptua praesent.</p>
-                                                </div>
-
-                                            </div>
-
-                                        </li> <!-- end comment level 1 -->
-
-                                        <li class="thread-alt depth-1 comment">
-
-                                            <div class="comment__avatar">
-                                                <img class="avatar" src="images/avatars/user-04.jpg" alt="" width="50" height="50">
-                                            </div>
-
-                                            <div class="comment__content">
-
-                                                <div class="comment__info">
-                                                    <div class="comment__author">John Doe</div>
-
-                                                    <div class="comment__meta">
-                                                        <div class="comment__time">Aug 14, 2021</div>
-                                                        <div class="comment__reply">
-                                                            <a class="comment-reply-link" href="#0">Reply</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="comment__text">
-                                                <p>Sumo euismod dissentiunt ne sit, ad eos iudico qualisque adversarium, tota falli et mei. Esse euismod
-                                                urbanitas ut sed, et duo scaevola pericula splendide. Primis veritus contentiones nec ad, nec et
-                                                tantas semper delicatissimi.</p>
-                                                </div>
-
-                                            </div>
-
-                                            <ul class="children">
-
-                                                <li class="depth-2 comment">
-
-                                                    <div class="comment__avatar">
-                                                        <img class="avatar" src="images/avatars/user-03.jpg" alt="" width="50" height="50">
-                                                    </div>
-
-                                                    <div class="comment__content">
-
-                                                        <div class="comment__info">
-                                                            <div class="comment__author">Kakashi Hatake</div>
-
-                                                            <div class="comment__meta">
-                                                                <div class="comment__time">Aug 14, 2021</div>
-                                                                <div class="comment__reply">
-                                                                    <a class="comment-reply-link" href="#0">Reply</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="comment__text">
-                                                            <p>Duis sed odio sit amet nibh vulputate
-                                                            cursus a sit amet mauris. Morbi accumsan ipsum velit. Duis sed odio sit amet nibh vulputate
-                                                            cursus a sit amet mauris</p>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <ul class="children">
-
-                                                        <li class="depth-3 comment">
-
-                                                            <div class="comment__avatar">
-                                                                <img class="avatar" src="images/avatars/user-04.jpg" alt="" width="50" height="50">
-                                                            </div>
-
-                                                            <div class="comment__content">
-
-                                                                <div class="comment__info">
-                                                                    <div class="comment__author">John Doe</div>
-
-                                                                    <div class="comment__meta">
-                                                                        <div class="comment__time">Aug 14, 2021</div>
-                                                                        <div class="comment__reply">
-                                                                            <a class="comment-reply-link" href="#0">Reply</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="comment__text">
-                                                                <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est
-                                                                etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
-                                                                </div>
-
-                                                            </div>
-
-                                                        </li>
-
-                                                    </ul>
-
-                                                </li>
-
-                                            </ul>
-
-                                        </li> <!-- end comment level 1 -->
-
-                                        <li class="depth-1 comment">
-
-                                            <div class="comment__avatar">
-                                                <img class="avatar" src="images/avatars/user-02.jpg" alt="" width="50" height="50">
-                                            </div>
-
-                                            <div class="comment__content">
-
-                                                <div class="comment__info">
-                                                    <div class="comment__author">Shikamaru Nara</div>
-
-                                                    <div class="comment__meta">
-                                                        <div class="comment__time">Aug 13, 2021</div>
-                                                        <div class="comment__reply">
-                                                            <a class="comment-reply-link" href="#0">Reply</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="comment__text">
-                                                <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
-                                                </div>
-
-                                            </div>
-
-                                        </li>  <!-- end comment level 1 -->
-
-                                    </ol>
-                                    <!-- END commentlist -->
-
-                                </div> <!-- end col-full -->
-                            </div> <!-- end comments -->
-
-
-                            <div class="comment-respond">
-
-                                <!-- START respond -->
-                                <div id="respond">
-
-                                    <h3>
-                                    Add Comment 
-                                    <span>Your email address will not be published.</span>
-                                    </h3>
-
-                                    <form name="contactForm" id="contactForm" method="post" action="" autocomplete="off">
-                                        <fieldset class="row">
-
-                                            <div class="column lg-6 tab-12 form-field">
-                                                <input name="cName" id="cName" class="u-fullwidth h-remove-bottom" placeholder="Your Name" value="" type="text">
-                                            </div>
-
-                                            <div class="column lg-6 tab-12 form-field">
-                                                <input name="cEmail" id="cEmail" class="u-fullwidth h-remove-bottom" placeholder="Your Email" value="" type="text">
-                                            </div>
-
-                                            <div class="column lg-12 form-field">
-                                                <input name="cWebsite" id="cWebsite" class="u-fullwidth h-remove-bottom" placeholder="Website" value="" type="text">
-                                            </div>
-
-                                            <div class="column lg-12 message form-field">
-                                                <textarea name="cMessage" id="cMessage" class="u-fullwidth" placeholder="Your Message"></textarea>
-                                            </div>
-
-                                            <div class="column lg-12">
-                                                <input name="submit" id="submit" class="btn btn--primary btn-wide btn--large u-fullwidth" value="Add Comment" type="submit">
-                                            </div>
-
-                                        </fieldset>
-                                    </form> <!-- end form -->
-
-                                </div>
-                                <!-- END respond-->
-
-                            </div> <!-- end comment-respond -->
-
-                        </div> <!-- end comments-wrap -->
+                
 
                     </div>
                 </div> <!-- end entry-wrap -->
@@ -679,8 +332,9 @@
 
     <!-- Java Script
     ================================================== -->
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+	<script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main.js"></script>
 
 </body>
 </html>
