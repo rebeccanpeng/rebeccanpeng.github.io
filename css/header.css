@@ -16,105 +16,15 @@
 /* ------------------------------------------------------------------- 
  * ## colors
  * ------------------------------------------------------------------- */
-:root {
 
-    /* color-1(#5F9295)
-     * color-2(#2D2327)
-     */
-    --color-1                      : hsla(183, 22%, 48%, 1);
-    --color-2                      : hsla(336, 13%, 16%, 1);
-
-    /* theme color variations
-     */
-    --color-1-lighter              : hsla(183, 22%, 68%, 1);
-    --color-1-light                : hsla(183, 22%, 58%, 1);
-    --color-1-dark                 : hsla(183, 22%, 38%, 1);
-    --color-1-darker               : hsla(183, 22%, 28%, 1);
-
-    --color-2-lighter              : hsla(336, 13%, 36%, 1);
-    --color-2-light                : hsla(336, 13%, 26%, 1);
-    --color-2-dark                 : hsla(336, 13%, 10%, 1);
-    --color-2-darker               : hsla(336, 13%, 5%, 1);
-
-    /* feedback colors
-     * color-error(#ffd1d2), color-success(#c8e675), 
-     * color-info(#d7ecfb), color-notice(#fff099)
-     */
-    --color-error                  : hsla(359, 100%, 91%, 1);
-    --color-success                : hsla(76, 69%, 68%, 1);
-    --color-info                   : hsla(205, 82%, 91%, 1);
-    --color-notice                 : hsla(51, 100%, 80%, 1);
-    --color-error-content          : hsla(359, 50%, 50%, 1);
-    --color-success-content        : hsla(76, 29%, 28%, 1);
-    --color-info-content           : hsla(205, 32%, 31%, 1);
-    --color-notice-content         : hsla(51, 30%, 30%, 1);
-
-    /* shades 
-     * generated using 
-     * Tint & Shade Generator 
-     * (https://maketintsandshades.com/)
-     */
-    --color-black                  : #000000;
-    --color-gray-19                : #0d0f0f;
-    --color-gray-18                : #1b1e1e;
-    --color-gray-17                : #282d2e;
-    --color-gray-16                : #363c3d;
-    --color-gray-15                : #444b4c;
-    --color-gray-14                : #515a5b;
-    --color-gray-13                : #5f696a;
-    --color-gray-12                : #6c787a;
-    --color-gray-11                : #7a8789;
-    --color-gray-10                : #879698;
-    --color-gray-9                 : #93a1a2;
-    --color-gray-8                 : #9fabad;
-    --color-gray-7                 : #abb6b7;
-    --color-gray-6                 : #b7c0c1;
-    --color-gray-5                 : #c3cbcc;
-    --color-gray-4                 : #cfd5d6;
-    --color-gray-3                 : #dbe0e0;
-    --color-gray-2                 : #e7eaea;
-    --color-gray-1                 : #f3f5f5;
-    --color-white                  : #ffffff;
-
-    /* text
-     */
-    --color-text                   : var(--color-gray-17);
-    --color-text-dark              : var(--color-gray-19);
-    --color-text-light             : var(--color-gray-12);
-    --color-placeholder            : var(--color-gray-12);
-
-    /* buttons
-     */
-    --color-btn                    : var(--color-gray-4);
-    --color-btn-text               : var(--color-text);
-    --color-btn-hover              : var(--color-gray-5);
-    --color-btn-hover-text         : var(--color-text);
-    --color-btn-primary            : var(--color-1-dark);
-    --color-btn-primary-text       : var(--color-white);
-    --color-btn-primary-hover      : var(--color-text-dark);
-    --color-btn-primary-hover-text : var(--color-white);
-    --color-btn-stroke             : var(--color-1-dark);
-    --color-btn-stroke-text        : var(--color-1-darker);
-    --color-btn-stroke-hover       : var(--color-text-dark);
-    --color-btn-stroke-hover-text  : var(--color-white);
-
-    /* preloader
-     */
-    --color-preloader-bg           : #CFE6E8;
-    --color-loader                 : var(--color-text-dark);
-    --color-loader-light           : var(--color-1-lighter);
-
-    /* others
-     */
-    --color-body                   : #CFE6E8;
-    --color-border                 : rgba(0, 0, 0, .08);
-    --border-radius                : 3px;
-}
 
 /* ------------------------------------------------------------------- 
  * ## spacing and typescale
  * ------------------------------------------------------------------- */
 :root {
+
+    --header-height: 50px; 
+    --title-space: 70px; 
 
     /* spacing
      * base font size: 19px 
@@ -211,6 +121,10 @@
 
 .s-header__block {
     z-index : 101;
+}
+
+.s-content { 
+    margin-top: var(--title-space); 
 }
 
 /* --------------------------------------------------------------------
